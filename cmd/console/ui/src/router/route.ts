@@ -50,21 +50,6 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
             {
                 path: '/home',
                 name: 'home',
-                component: () => import('/src/views/home/index.vue'),
-                meta: {
-                    title: 'message.router.home',
-                    isLink: '',
-                    isHide: false,
-                    isKeepAlive: true,
-                    isAffix: true,
-                    isIframe: false,
-                    roles: ['admin', 'common'],
-                    icon: 'ele-House',
-                },
-            },
-            {
-                path: '/client',
-                name: 'Client',
                 component: () => import('/src/views/openClient/index.vue'),
                 meta: {
                     title: 'message.router.client',
@@ -77,6 +62,21 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
                     icon: 'ele-User',
                 },
             },
+            // {
+            //     path: '/client',
+            //     name: 'Client',
+            //     component: () => import('/src/views/openClient/index.vue'),
+            //     meta: {
+            //         title: 'message.router.client',
+            //         isLink: '',
+            //         isHide: false,
+            //         isKeepAlive: true,
+            //         isAffix: true,
+            //         isIframe: false,
+            //         roles: ['admin', 'common'],
+            //         icon: 'ele-User',
+            //     },
+            // },
             {
                 path: '/template',
                 name: 'Template',
@@ -93,8 +93,8 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
                 },
             },
             {
-                path: '/mail',
-                name: 'Mail',
+                path: '/sender',
+                name: 'Sender',
                 component: () => import('/src/views/mail/index.vue'),
                 meta: {
                     title: 'message.router.mail',
